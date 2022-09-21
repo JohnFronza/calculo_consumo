@@ -26,6 +26,15 @@
             <div class="conteudo-painel">
                 <form action="{{url('/gasto')}}" method="get">
 
+                    <label for="combustivel">Combustível</label>
+                    <select name="combustivel">
+                        <option value="Gasolina" selected>Gasolina</option>
+                        <option value="Etanol">Etanol</option>
+                        <option value="Diesel">Diesel</option>
+                    </select>
+                    <label for="valorcombustivel">Valor</label>
+                    <input type="number" name="valorcombustivel">
+
                     <label for="distancia">Distância em Quilômetros a ser percorrida</label>
                     <input type="number" class="campoTexto"  name="distancia" required/>
 
